@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChessPress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#bio">About</a></li>
+      <li><a href="#quote">Quote</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1 class="site-title">ChessPress</h1>
+
+    <!-- Interactive heading and buttons -->
+    <h2 id="dynamic-heading">Welcome to ChessPress</h2>
+    <button onclick="changeHeading()">Click Me</button>
+
+    <div id="quote-container"></div>
+    <button onclick="toggleQuote()">Fun Quote</button>
+  </header>
+
+  <!-- Bio Section -->
+  <section id="bio">
+    <h2>About Me</h2>
+    <div class="bio-content">
+      <img src="nigelbio.jpg" alt="Photo of Chess Teacher" class="profile-photo">
+      <p>Hi! I'm a passionate chess teacher who loves helping players of all levels improve their game...</p>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section id="quote">
+    <h2>Favorite Chess Quote</h2>
+    <blockquote>
+      "When you see a good move, look for a better one." – Emanuel Lasker
+    </blockquote>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at: <a href="mailto:nigelvspencer@gmail.com">nigelvspencer@gmail.com</a></p>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

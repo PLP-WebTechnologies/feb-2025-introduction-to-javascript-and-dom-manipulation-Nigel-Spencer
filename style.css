@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Body & Typography === */
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 15px;
+}
+
+/* === Navigation Bar === */
+.navbar {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.site-title {
+  font-size: 2.5rem;
+}
+
+/* === Bio Section === */
+#bio {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#bio h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bio-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border: 3px solid #444;
+  border-radius: 8px;
+}
+
+/* === Quote Section === */
+#quote {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #e6e6e6;
+  border-left: 4px solid #666;
+  padding: 20px;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+/* === Contact Section === */
+#contact {
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* === Responsive Layout === */
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .bio-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet (601px to 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .bio-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .profile-photo {
+    width: 150px;
+    height: 200px;
+  }
+
+  .site-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Desktop (993px and up) */
+@media (min-width: 993px) {
+  .bio-content {
+    flex-direction: row;
+  }
+
+  .profile-photo {
+    width: 180px;
+    height: 240px;
+  }
+
+  .site-title {
+    font-size: 2.5rem;
+  }
+}
